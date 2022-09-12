@@ -1,0 +1,13 @@
+.title-config {
+  .semi-row-flex {
+    >div {
+      z-index: 0;
+    }
+  }
+
+  .sketch-picker {
+    position: relative;
+    left: 30px;
+    top: 30px;
+  }
+}

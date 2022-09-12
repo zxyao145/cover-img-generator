@@ -1,0 +1,20 @@
+.color-list {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-gap: 0.5rem;
+
+
+  .color-list-item {
+    display: inline-flex;
+    width: 90px;
+    height: 60px;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
+
+  .active-color{
+    border: 2px solid #000;
+  }
+
+}

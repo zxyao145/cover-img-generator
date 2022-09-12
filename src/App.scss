@@ -1,0 +1,138 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.App {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+  position: relative;
+
+  .icon-menu-trigger {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 32px;
+    height: 32px;
+    z-index: 999999;
+
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+
+    border: 1px solid #ccc;
+
+  }
+
+  .right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  >div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  >div.config {
+    flex-direction: column;
+  }
+}
+
+
+.left-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0;
+}
+
+
+.title-wrapper {
+  height: 100%;
+
+  >.title-container {
+
+    >h1,
+    >h2 {
+      padding: 0.25rem;
+      font-weight: normal;
+      margin: 0;
+      line-height: 1.2;
+    }
+  }
+}
+
+
+.img-preview-container {
+  background-color: #efefef;
+
+  .img-preview {
+    height: 300px;
+  }
+}
+
+.config {
+  >div.config-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+
+    >.config-label {
+      width: 100px;
+      margin-right: 1rem;
+
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border-right: 1px solid #ccc;
+    }
+
+    >div:last-child {
+      flex-grow: 1;
+    }
+  }
+}
+
+
+.semi-row-flex {
+  margin-bottom: 1.25rem;
+}
+
+div {
+  >.semi-row-flex:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.label-span {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  margin: 0.5rem;
+
+}
+
+// override
+.semi-sidesheet-title {
+  text-align: right;
+}
+
+#semi-modal-body {
+  overflow-y: auto;
+}
